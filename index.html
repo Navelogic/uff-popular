@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O GUIA</title>
+    <title>Ajuda - UFF: Notícias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <h1>Grupos relacionados ao UFF: Notícias</h1>
+        <p id="aviso-legal">Lembrando: todos os grupos aqui são mantidos por estudantes de diversas áreas e não possuem relação com a Universidade Federal Fluminense</p>
+    </header>
+    <section id="content">
+        <div id="view-normal">
+            <h2>Grupo e canal UFF: Notícias</h2>
+            <button onclick="renderUFFNoticias()"><img src="img/uffnoticiasgrupo.png" alt="Logo do grupo UFF: Notícias"></button>
     
+            <h2>Grupos da UFF: Bazar/Vendas</h2>
+            <button onclick="renderUFFBazareVendas()"><img src="img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas"></button>
+        </div>
+        <div id="view-dinamica" style="display:none;">
+            <button onclick="renderViewNormal()">Voltar ao início</button>
+            <div id="content-dinamico"></div>
+        </div>
+    </section>
 </body>
 </html>
