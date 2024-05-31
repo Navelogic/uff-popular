@@ -6,8 +6,8 @@ function renderUFFNoticias() {
         <p>Debates, fofocas, gatinhos e muita gente para conversar. Aqui a discussão é livre (seguindo as regras, é claro).</p>
         <img class="logo" src="img/uffnoticiasgrupo.png" alt="Logo do grupo UFF: Notícias">
         <div class="social-icons">
-            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/CUWqm6YLFhJ8M4a1BqrDJ2')">
-            <img class="direcao" src="../svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/uffnoticias')">
+            <img class="direcao" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/CUWqm6YLFhJ8M4a1BqrDJ2')">
+            <img class="direcao" src="svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/uffnoticias')">
         </div>
         <h3>Regras do Grupo</h3>
         <ul>
@@ -21,7 +21,7 @@ function renderUFFNoticias() {
         <p>Canal onde só administradores podem falar. Melhor escolha caso você queira ficar mais atualizado só com as notícias.</p>
         <img class="logo" src="img/uffnoticiascanal.png" alt="Logo do canal UFF: Notícias">
         <div class="social-icons">
-        <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://whatsapp.com/channel/0029VaeUeMGAe5VmRIlMT71x')">
+        <img class="direcao" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://whatsapp.com/channel/0029VaeUeMGAe5VmRIlMT71x')">
         </div>
         <h4>Deseja se tornar um administrador e mandar notícias? Veja se você se encaixa.</h4>
         <ol>
@@ -53,7 +53,7 @@ function renderUFFNoticias() {
             </li>
         </ol>
         <div class="social-icons">
-        <img class="direcao" src="../svg/gmail.svg" alt="Ícone do Gmail" onclick="window.open('mailto:uffnoticias.contato@gmail.com?subject=Gostaria de fazer parte ou tenho uma notícia/sugestão/reclamação')">
+        <img class="direcao" src="svg/gmail.svg" alt="Ícone do Gmail" onclick="window.open('mailto:uffnoticias.contato@gmail.com?subject=Gostaria de fazer parte ou tenho uma notícia/sugestão/reclamação')">
         </div>
     `;
     console.log('Renderizou UFF Notícias');
@@ -67,20 +67,20 @@ function renderUFFBazareVendas() {
         <p>Bem-vindo ao grupo UFF: Bazar/Vendas. Aqui você pode comprar e vender itens entre a comunidade da Universidade Federal Fluminense. Conforme os grupos vão ficando lotados, novos vão surgindo.</p>
         <div class="bazar">
             <div class="grupo">
-                <img src="../img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
-                <img class="direcao social-icons" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmifC2jS4naLPkmyzTZRfM')">
+                <img src="img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
+                <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmifC2jS4naLPkmyzTZRfM')">
             </div>
             <div class="grupo">
-                <img src="../img/uffbazarevendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
-                <img class="direcao social-icons" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EIroeF8YB306s2Y8OopaVH')">
+                <img src="img/uffbazarevendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
+                <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EIroeF8YB306s2Y8OopaVH')">
             </div>
             <div class="grupo">
-                <img src="../img/uffbazerevendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
-                <img class="direcao social-icons" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EDLWtpJ8zaGGVHRvwrbll2')">
+                <img src="img/uffbazerevendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
+                <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EDLWtpJ8zaGGVHRvwrbll2')">
             </div>
             <div class="grupo">
-                <img src="../img/uffbazarevendasunificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
-                <img class="direcao social-icons" src="../svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/+49xcZPKzKoIwMDgx')">
+                <img src="img/uffbazarevendasunificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
+                <img class="direcao social-icons" src="svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/+49xcZPKzKoIwMDgx')">
             </div>
         </div>
         <h3>Regras do Grupo</h3>
