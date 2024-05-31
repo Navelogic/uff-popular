@@ -65,8 +65,17 @@ function renderUFFBazareVendas() {
     document.getElementById('view-dinamica').style.display = 'block';
     document.getElementById('content-dinamico').innerHTML = `
         <h2>UFF: Bazar/Vendas</h2>
-        <p>Bem-vindo ao grupo UFF: Bazar/Vendas. Aqui você pode comprar e vender itens entre a comunidade da Universidade Federal Fluminense.</p>
-        <img src="img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas">
+        <p>Bem-vindo ao grupo UFF: Bazar/Vendas. Aqui você pode comprar e vender itens entre a comunidade da Universidade Federal Fluminense. Conforme os grupos vão ficando lotados, novos vão surgindo.</p>
+        <div class="bazar">
+            <img src="../img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
+            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmifC2jS4naLPkmyzTZRfM')">
+            <img src="../img/uffbazarevendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
+            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EIroeF8YB306s2Y8OopaVH')">
+            <img src="../img/uffbazerevendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
+            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EDLWtpJ8zaGGVHRvwrbll2')">
+            <img src="../img/uffbazarevendasunificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
+            <img class="direcao" src="../svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/+49xcZPKzKoIwMDgx')">
+        </div>
     `;
     console.log('Renderizou UFF: Bazar/Vendas');
 }
