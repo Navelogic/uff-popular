@@ -15,7 +15,6 @@ function renderUFFNoticias() {
             <li>Evite postar conteúdo que não seja relacionado à UFF.</li>
             <li>Proibido figurinhas de cunho sexual ou discriminatório.</li>
             <li>Proibido conteúdo de violência explícita.</li>
-            <li>Proibido conteúdo de drogas e armas.</li>
         </ul>
         <hr>
         <h2>UFF: Notícias - Canal</h2>
@@ -67,18 +66,37 @@ function renderUFFBazareVendas() {
         <h2>UFF: Bazar/Vendas</h2>
         <p>Bem-vindo ao grupo UFF: Bazar/Vendas. Aqui você pode comprar e vender itens entre a comunidade da Universidade Federal Fluminense. Conforme os grupos vão ficando lotados, novos vão surgindo.</p>
         <div class="bazar">
-            <img src="../img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
-            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmifC2jS4naLPkmyzTZRfM')">
-            <img src="../img/uffbazarevendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
-            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EIroeF8YB306s2Y8OopaVH')">
-            <img src="../img/uffbazerevendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
-            <img class="direcao" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EDLWtpJ8zaGGVHRvwrbll2')">
-            <img src="../img/uffbazarevendasunificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
-            <img class="direcao" src="../svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/+49xcZPKzKoIwMDgx')">
+            <div class="grupo">
+                <img src="../img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
+                <img class="direcao social-icons" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmifC2jS4naLPkmyzTZRfM')">
+            </div>
+            <div class="grupo">
+                <img src="../img/uffbazarevendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
+                <img class="direcao social-icons" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EIroeF8YB306s2Y8OopaVH')">
+            </div>
+            <div class="grupo">
+                <img src="../img/uffbazerevendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
+                <img class="direcao social-icons" src="../svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EDLWtpJ8zaGGVHRvwrbll2')">
+            </div>
+            <div class="grupo">
+                <img src="../img/uffbazarevendasunificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
+                <img class="direcao social-icons" src="../svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/+49xcZPKzKoIwMDgx')">
+            </div>
         </div>
+        <h3>Regras do Grupo</h3>
+        <ul>
+            <li>Respeite os outros membros do grupo.</li>
+            <li>Proibido figurinhas de cunho sexual ou discriminatório.</li>
+            <li>Proibido conteúdo de violência explícita.</li>
+            <li>Permitido apenas anúncios de venda pertencente a discentes da UFF, independente do curso.</li>
+            <li>Os administradores não se responsabilizam por transações entre comprador e anunciante.</li>
+            <li>Sempre apresentar o preço do produto no momento do anúncio.</li>
+            <li>Opiniões sobre valores devem ser tratados diretamente com o anunciante.</li>
+        </ul>
     `;
     console.log('Renderizou UFF: Bazar/Vendas');
 }
+
 
 function renderViewNormal() {
     document.getElementById('view-normal').style.display = 'block';
