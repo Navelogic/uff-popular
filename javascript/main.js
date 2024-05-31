@@ -16,6 +16,9 @@ function renderUFFNoticias() {
         <hr>
         <h2>UFF: Notícias - Canal</h2>
         <p>Canal onde só administradores podem falar. Melhor escolha caso você queira ficar mais atualizado só com as noticias.<p>
+        <img src="img/uffnoticiascanal.png" alt="Logo do canal UFF: Notícias">
+        <h4>Deseja se tornar um administrador e mandar notícias? Veja se você se encaixa.</h4>
+
     `;
     console.log('Renderizou UFF Notícias');
 }
