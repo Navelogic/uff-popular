@@ -1,3 +1,16 @@
+function carregarFavicons() {
+    fetch('favicons.html')
+    .then(response => response.text())
+    .then(data => {
+        console.log('Favicons carregados com sucesso:', data);  
+        document.head.insertAdjacentHTML('beforeend', data);
+    })
+    .catch(error => console.error('Erro ao carregar favicons:', error));
+}
+window.addEventListener('DOMContentLoaded', carregarFavicons);
+
+// Renderização de conteúdo dinâmico
+console.log('Esperando para renderizar conteúdo dinâmico...')
 function renderUFFNoticias() {
     document.getElementById('view-normal').style.display = 'none';
     document.getElementById('view-dinamica').style.display = 'block';
