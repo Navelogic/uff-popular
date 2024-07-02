@@ -11,9 +11,11 @@ window.addEventListener('DOMContentLoaded', carregarFavicons);
 
 // Renderização de conteúdo dinâmico
 console.log('Esperando para renderizar conteúdo dinâmico...')
+
 function renderUFFNoticias() {
-    document.getElementById('view-normal').style.display = 'none';
-    document.getElementById('view-dinamica').style.display = 'block';
+
+    personalDocument();
+
     document.getElementById('content-dinamico').innerHTML = `
         <h2>UFF: Notícias - Grupo</h2>
         <p>Debates, fofocas, gatinhos e muita gente para conversar. Aqui a discussão é livre (seguindo as regras, é claro).</p>
@@ -73,8 +75,9 @@ function renderUFFNoticias() {
 }
 
 function renderUFFBazareVendas() {
-    document.getElementById('view-normal').style.display = 'none';
-    document.getElementById('view-dinamica').style.display = 'block';
+
+    personalDocument();
+
     document.getElementById('content-dinamico').innerHTML = `
         <h2>UFF: Bazar/Vendas</h2>
         <p>Bem-vindo ao grupo UFF: Bazar/Vendas. Aqui você pode comprar e vender itens entre a comunidade da Universidade Federal Fluminense. Conforme os grupos vão ficando lotados, novos vão surgindo.</p>
@@ -110,10 +113,47 @@ function renderUFFBazareVendas() {
     console.log('Renderizou UFF: Bazar/Vendas');
 }
 
+function renderPatadeApoio(){
+
+    personalDocument();
+
+    document.getElementById('content-dinamico').innerHTML = `
+        <h2>Pata de Apoio</h2>
+        <br>
+        <p>😺 Não somos um abrigo!<p>
+        <p>🐾 Projeto destinado ao resgate, cuidados, alimentação e adoções responsáveis em Niterói e RJ.<p>
+        <p>🐾 Composto por voluntários</p>
+        <img class="logo" src="img/patadeapoio.png" alt="Logo do grupo Pata de Apoio">
+        <div class="social-icons">
+            <img class="direcao" src="svg/instagram.svg" alt="Ícone do Instagram" onclick="window.open('https://www.instagram.com/patadeapoio/')">
+            <img class="direcao" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmSvnZLLlX8AyyjzUPjXDG')">
+        </div>
+        <h3>Regras do Grupo</h3>
+        <ul>
+            <li>Respeite os outros membros do grupo.</li>
+            <li>Proibido figurinhas de cunho sexual ou discriminatório.</li>
+            <li>Proibido conteúdo de violência explícita.</li>
+            <li>Proibido flodar mensagens.</li>
+            <li>Antes de enviar qualquer post de adoção conferir se não se trata de um golpe.</li>
+        </ul>
+`;
+    console.log('Renderizou Pata de Apoio');
+}
+
+function renderBusUFF(){
+
+    personalDocument();
+}
+
 
 function renderViewNormal() {
     document.getElementById('view-normal').style.display = 'block';
     document.getElementById('view-dinamica').style.display = 'none';
     document.getElementById('content-dinamico').innerHTML = '';
     console.log('Voltou para a visualização padrão');
+}
+
+function personalDocument(){
+    document.getElementById('view-normal').style.display = 'none';
+    document.getElementById('view-dinamica').style.display = 'block';
 }
