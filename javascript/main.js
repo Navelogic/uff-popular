@@ -140,9 +140,28 @@ function renderPatadeApoio(){
     console.log('Renderizou Pata de Apoio');
 }
 
-function renderBusUFF(){
+function renderCentral(){
 
     personalDocument();
+
+    document.getElementById('content-dinamico').innerHTML = `
+        <h2>Central Avisy</h2>
+        <br>
+        <p>Aqui é onde toda a ação acontece! Juntamos todos os grupos oficiais da Avisy em um lugar só pra você não perder nadinha do que rola na nossa comunidade.<p>
+        <img class="logo" src="img/central.png" alt="Logo do grupo Central Avisy">
+        <div class="social-icons">
+            <img class="direcao" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/BikQlKaqOvS9DSEd5ZZQZ3')">
+        </div>
+        <h3>Regras do Grupo</h3>
+        <ul>
+            <li>Respeite os outros membros do grupo.</li>
+            <li>Proibido figurinhas de cunho sexual ou discriminatório.</li>
+            <li>Proibido conteúdo de violência explícita.</li>
+            <li>Proibido flodar mensagens.</li>
+            <li>Antes de enviar qualquer post de adoção conferir se não se trata de um golpe.</li>
+        </ul>
+`;
+    console.log('Renderizou Central Avisy');
 }
 
 
@@ -153,7 +172,22 @@ function renderViewNormal() {
     console.log('Voltou para a visualização padrão');
 }
 
+
+
+// Funções de apoio
+
 function personalDocument(){
     document.getElementById('view-normal').style.display = 'none';
     document.getElementById('view-dinamica').style.display = 'block';
+}
+
+function atualizarHora() {
+    document.getElementById('hora-atual').innerHTML = `Hora Atual: ${horaAtual()}`;
+}
+
+function horaAtual() {
+    const agora = new Date();
+    const hora = agora.getHours();
+    const minuto = agora.getMinutes().toString().padStart(2, '0');
+    return `${hora}:${minuto}`;
 }
