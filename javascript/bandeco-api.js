@@ -1,38 +1,50 @@
 // Função para renderizar o cardápio na view-normal
 function renderMenuInViewNormal(data) {
     const menuContainer = document.getElementById('menu-container');
-    menuContainer.innerHTML = ''; // Limpar conteúdo anterior
+    menuContainer.innerHTML = '';
 
-    data.forEach(item => {
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+    let selectedMeal;
+
+    // Definir se é hora de almoço ou jantar
+    if (currentHour >= 10 && currentHour < 15) {
+        selectedMeal = data.find(item => item.name === "Almoço");
+    } else if (currentHour >= 15 && currentHour < 20) {
+        selectedMeal = data.find(item => item.name === "Jantar");
+    }
+
+    if (selectedMeal) {
         const card = document.createElement('div');
         card.classList.add('menu-item');
 
-        // Título da refeição (ex: "Almoço", "Jantar")
         const title = document.createElement('h3');
-        title.textContent = item.name;
+        title.textContent = selectedMeal.name;
         card.appendChild(title);
 
-        // Detalhes da refeição
+
         const details = document.createElement('p');
         
-        // Função auxiliar para adicionar conteúdo somente se existir
+
         function addDetail(label, value) {
             if (value) {
                 details.innerHTML += `${label}: ${value}<br>`;
             }
         }
 
-        addDetail('Prato Principal', item.main_course);
-        addDetail('Guarnição', item.garrison);
-        addDetail('Acompanhamentos', item.side_dishes);
-        addDetail('Salada 1', item.salad1);
-        addDetail('Salada 2', item.salad2);
-        addDetail('Sobremesa', item.dessert);
-        addDetail('Bebida', item.refreshment);
+        addDetail('Prato Principal', selectedMeal.main_course);
+        addDetail('Guarnição', selectedMeal.garrison);
+        addDetail('Acompanhamentos', selectedMeal.side_dishes);
+        addDetail('Salada 1', selectedMeal.salad1);
+        addDetail('Salada 2', selectedMeal.salad2);
+        addDetail('Sobremesa', selectedMeal.dessert);
+        addDetail('Bebida', selectedMeal.refreshment);
 
         card.appendChild(details);
         menuContainer.appendChild(card);
-    });
+    } else {
+        menuContainer.innerHTML = '<p>Nenhuma refeição disponível no momento.</p>';
+    }
 }
 
 async function fetchMenuData() {
@@ -46,7 +58,6 @@ async function fetchMenuData() {
 }
 
 
-// Dados de teste (substituindo a chamada da API)
 /*
 const data = [
     {
@@ -77,8 +88,7 @@ const data = [
     }
 ];
 
-// Renderizar o menu usando os dados de teste
 renderMenuInViewNormal(data);
 */
 
-fetchMenuData(); // Buscar dados da API e renderizar o cardápio na view-normal
+fetchMenuData();
