@@ -50,19 +50,23 @@ function renderUFFBazareVendas() {
         <p>Bem-vindo ao grupo UFF: Bazar/Vendas. Aqui você pode comprar e vender itens entre a comunidade da Universidade Federal Fluminense. Conforme os grupos vão ficando lotados, novos vão surgindo.</p>
         <div class="bazar">
             <div class="grupo">
-                <img src="img/uffbazarevendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
+                <img src="img/BazareVendas1.png" alt="Logo do grupo UFF: Bazar/Vendas 1.0">
                 <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/GmifC2jS4naLPkmyzTZRfM')">
             </div>
             <div class="grupo">
-                <img src="img/uffbazarevendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
+                <img src="img/BazareVendas2.png" alt="Logo do grupo UFF: Bazar/Vendas 2.0">
                 <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EIroeF8YB306s2Y8OopaVH')">
             </div>
             <div class="grupo">
-                <img src="img/uffbazerevendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
+                <img src="img/BazareVendas3.png" alt="Logo do grupo UFF: Bazar/Vendas 3.0">
                 <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/EDLWtpJ8zaGGVHRvwrbll2')">
             </div>
             <div class="grupo">
-                <img src="img/uffbazarevendasunificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
+                <img src="img/BazareVendas4.png" alt="Logo do grupo UFF: Bazar/Vendas 4.0">
+                <img class="direcao social-icons" src="svg/whatsapp.svg" alt="Ícone do WhatsApp" onclick="window.open('https://chat.whatsapp.com/F9LeB58tXup1yywsJzKTeV')">
+            </div>
+            <div class="grupo">
+                <img src="img/BazareVendasUnificado.png" alt="Logo do grupo UFF: Bazar/Vendas Unificado">
                 <img class="direcao social-icons" src="svg/telegram.svg" alt="Ícone do Telegram" onclick="window.open('https://t.me/+49xcZPKzKoIwMDgx')">
             </div>
         </div>
