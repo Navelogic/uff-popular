@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UFF POPULAR</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <h1>UFF: POPULAR (v3.0)</h1>
-        <p id="aviso-legal">Lembramos que todos os grupos e canais apresentados são administrados por estudantes de diversas áreas e não possuem vínculo formal com a Universidade Federal Fluminense.</p>
+      <h1 class="text-3xl">UFF: POPULAR</h1>
+      <p class="italic opacity-70 text-xl">v3.0</p>
+      <p id="aviso-legal" class="opacity-90 border-y border-white/40">
+        Lembramos que todos os grupos e canais apresentados são administrados
+        por estudantes de diversas áreas e não possuem vínculo formal com a
+        <b>Universidade Federal Fluminense</b>.
+      </p>
     </header>
     <section id="content">
-        <div id="view-normal">
-            <h2>Grupo e canal UFF: Notícias</h2>
-            <button class="boton-home" onclick="renderUFFNoticias()"><img src="img/uffnoticiasgrupo.png" alt="Logo do grupo UFF: Notícias"></button>
-    
-            <h2>Grupos da UFF: Bazar/Vendas</h2>
-            <button class="boton-home" onclick="renderUFFBazareVendas()"><img src="img/BazareVendas1.png" alt="Logo do grupo UFF: Bazar/Vendas"></button>
-    
-            <h2>Pata de Apoio</h2>
-            <button class="boton-home" onclick="renderPatadeApoio()"><img src="img/patadeapoio.png" alt="Logo do grupo Pata de Apoio"></button>
-        </div>
-        <div id="view-dinamica" style="display:none;">
-            <button id="voltar-ao-inicio" onclick="renderViewNormal()">Voltar ao início</button>
-            <div id="content-dinamico"></div>
-        </div>
+      <div id="view-normal">
+        <h2>Grupo e canal UFF: Notícias</h2>
+        <button class="boton-home" onclick="renderUFFNoticias()">
+          <img
+            src="img/uffnoticiasgrupo.png"
+            alt="Logo do grupo UFF: Notícias"
+          />
+        </button>
+
+        <h2>Grupos da UFF: Bazar/Vendas</h2>
+        <button class="boton-home" onclick="renderUFFBazareVendas()">
+          <img
+            src="img/BazareVendas1.png"
+            alt="Logo do grupo UFF: Bazar/Vendas"
+          />
+        </button>
+
+        <h2>Pata de Apoio</h2>
+        <button class="boton-home" onclick="renderPatadeApoio()">
+          <img src="img/patadeapoio.png" alt="Logo do grupo Pata de Apoio" />
+        </button>
+      </div>
+      <div id="view-dinamica" style="display: none">
+        <button id="voltar-ao-inicio" onclick="renderViewNormal()">
+          Voltar ao início
+        </button>
+        <div id="content-dinamico"></div>
+      </div>
     </section>
-</body>
-<script src="javascript/main.js"></script>
+  </body>
+  <script src="javascript/main.js"></script>
 </html>
