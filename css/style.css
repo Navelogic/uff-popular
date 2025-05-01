@@ -1,16 +1,16 @@
 * {
-    background-color: #202020;
     color: white;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 body {
     text-align: center;
     min-height: 100vh;
     padding: 20px;
+    background-color: #202020;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +110,7 @@ ul li, ol li {
 
 .bazar {
     display: flex;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); Ajusta o número de colunas automaticamente */
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -123,7 +124,7 @@ ul li, ol li {
     width: 150px;
 }
 
-.bazar img {
+.bazar img:not(.h-5) {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -219,4 +220,40 @@ p {
 
 .menu-item:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.bg-zap {
+    background-color: #25d366;
+    width: fit-content;
+    justify-self: center;
+    padding: 6px 12px !important;
+    /* margin: 6px 12px; */
+}
+.bg-insta {
+    /* background-color: #25d366; */
+    width: fit-content;
+    padding: 6px 12px !important;
+    justify-self: center;
+    /* margin: 6px 12px; */
+}
+
+h2, h3 {
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+li {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.w-5 {
+    width: 20px !important;
+    
+}
+
+.h-5 {
+    height: 20px !important;
 }
