@@ -1,51 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="pt-br" data-theme="dark">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UFF POPULAR</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="text-3xl">UFF: POPULAR</h1>
-      <p class="italic opacity-70 text-xl">v3.0</p>
-      <p id="aviso-legal" class="opacity-90 border-y border-white/40">
-        Lembramos que todos os grupos e canais apresentados são administrados
-        por estudantes de diversas áreas e não possuem vínculo formal com a
-        <b>Universidade Federal Fluminense</b>.
-      </p>
-    </header>
-    <section id="content">
-      <div id="view-normal">
-        <h2>Grupo e canal UFF: Notícias</h2>
-        <button class="boton-home" onclick="renderUFFNoticias()">
-          <img
-            src="img/uffnoticiasgrupo.png"
-            alt="Logo do grupo UFF: Notícias"
-          />
-        </button>
 
-        <h2>Grupos da UFF: Bazar/Vendas</h2>
-        <button class="boton-home" onclick="renderUFFBazareVendas()">
-          <img
-            src="img/BazareVendas1.png"
-            alt="Logo do grupo UFF: Bazar/Vendas"
-          />
-        </button>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-        <h2>Pata de Apoio</h2>
-        <button class="boton-home" onclick="renderPatadeApoio()">
-          <img src="img/patadeapoio.png" alt="Logo do grupo Pata de Apoio" />
-        </button>
-      </div>
-      <div id="view-dinamica" style="display: none">
-        <button id="voltar-ao-inicio" onclick="renderViewNormal()">
-          Voltar ao início
-        </button>
-        <div id="content-dinamico"></div>
-      </div>
-    </section>
-  </body>
-  <script src="javascript/main.js"></script>
+    <link rel="stylesheet" href="css/daisyui.css">
+   <script src="css/tailwind.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <main class="container mx-auto max-w-4xl">
+
+        <header class="text-center my-8">
+            <div class="hero">
+                <div class="hero-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold">UFF: POPULAR</h1>
+                        <p class="py-2 italic opacity-70 text-xl">v4.0</p>
+                    </div>
+                </div>
+            </div>
+            <div id="aviso-legal" class="alert alert-info mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span>
+                    Lembramos que todos os grupos e canais são administrados por estudantes.
+                </span>
+            </div>
+        </header>
+
+        <section id="content">
+            <div id="view-normal" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="img/uffnoticiascanal.png" alt="Logo do grupo UFF: Notícias" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Grupo e canal UFF: Notícias</h2>
+                        <p>Debates, fofocas e muita gente para conversar.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="renderUFFNoticias()">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="img/Logo - Bazar e Vendas 5.png" alt="Logo do grupo UFF: Bazar/Vendas" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Grupos da UFF: Bazar/Vendas</h2>
+                        <p>Compre e venda itens entre a comunidade da UFF.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="renderUFFBazareVendas()">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="img/Repúblicas.jpg" alt="Logo do grupo UFF: Repúblicas" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Grupo e Planilha UFF: Repúblicas</h2>
+                        <p>Encontre repúblicas, vagas e colegas de quarto.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="renderUFFRepublicas()">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="img/patadeapoio.png" alt="Logo do grupo Pata de Apoio" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pata de Apoio</h2>
+                        <p>Projeto de resgate, cuidados e adoção de animais.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="renderPatadeApoio()">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Sobre & Guia</h2>
+                        <p>Conheça o projeto, o repositório no GitHub e como adicionar novos grupos.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-accent" onclick="renderSobre()">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="view-dinamica" style="display: none;">
+                <button id="voltar-ao-inicio" class="btn btn-outline mb-4" onclick="renderViewNormal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                    Voltar ao início
+                </button>
+                <div id="content-dinamico" class="prose max-w-none">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/main.js"></script>
+</body>
 </html>
